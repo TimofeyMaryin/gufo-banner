@@ -21,3 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "Gufo Banner"
 include(":app")
+
+include(":presentation_splash")
+include(":presentation_composable")
+include(":presentation_home")

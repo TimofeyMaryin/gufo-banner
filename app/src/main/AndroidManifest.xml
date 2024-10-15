@@ -19,7 +19,7 @@
         android:theme="@style/Theme.GufoBanner"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.gufo.presentation_splash.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GufoBanner">
@@ -29,6 +29,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".MainActivity"/>
+        <activity android:name="com.gufo.presentation_home.HomeActivity"/>
+
     </application>
 
 </manifest>
