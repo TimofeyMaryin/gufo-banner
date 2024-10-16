@@ -32,6 +32,7 @@
 
         <activity android:name=".MainActivity"/>
         <activity android:name="com.gufo.presentation_home.HomeActivity"/>
+        <activity android:name="com.gufo.presentation_create.CreateBannerActivity"/>
 
     </application>
 

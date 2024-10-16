@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/data" />
             <option value="$PROJECT_DIR$/presentation_composable" />
+            <option value="$PROJECT_DIR$/presentation_create" />
             <option value="$PROJECT_DIR$/presentation_home" />
             <option value="$PROJECT_DIR$/presentation_splash" />
           </set>
