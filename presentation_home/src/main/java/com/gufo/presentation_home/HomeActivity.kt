@@ -1,6 +1,7 @@
 package com.gufo.presentation_home
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -20,28 +21,12 @@ class HomeActivity : ComponentActivity() {
         setContent {
             GufoBannerTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Home Activity",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    HomeScreen {
+                        Toast.makeText(this, "Yeap", Toast.LENGTH_SHORT).show()
+                    }
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    GufoBannerTheme {
-        Greeting("Android")
-    }
-}
