@@ -10,11 +10,12 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 
+@Deprecated("Does not work")
 @Composable
 fun CreateAndSaveImage(
     modifier: Modifier = Modifier,
     onImageCreated: (Bitmap) -> Unit,
-    content: @Composable () -> Unit
+    content: @Composable (Modifier) -> Unit
 ) {
     // Размеры изображения
     val compositionWidth = 1920
@@ -30,7 +31,7 @@ fun CreateAndSaveImage(
     val context = LocalContext.current
     val composeView = ComposeView(context).apply {
         setContent {
-            content()
+            content(modifier)
         }
     }
 
