@@ -21,7 +21,7 @@ class CreateBannerActivity : ComponentActivity() {
             GufoBannerTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = "Create Banner Activity",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
