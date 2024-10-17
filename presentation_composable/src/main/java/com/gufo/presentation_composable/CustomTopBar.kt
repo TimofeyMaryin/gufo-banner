@@ -26,6 +26,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.gufo.presentation_composable.create_screen.SelectedImageCreateFragment
+import com.gufo.presentation_composable.create_screen.SelectedShapesCreateFragment
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -64,7 +65,7 @@ fun BannerScreenMainMenu(
             HorizontalPager(state = pagerState, modifier = Modifier.fillMaxSize()) {
                 when (pagerState.currentPage) {
                     0 -> SelectedImageCreateFragment()
-                    1 -> Placer(color = Color.Cyan)
+                    1 -> SelectedShapesCreateFragment()
                     2 -> Placer(color = Color.Red)
                     3 -> Placer(color = Color.DarkGray)
                 }
