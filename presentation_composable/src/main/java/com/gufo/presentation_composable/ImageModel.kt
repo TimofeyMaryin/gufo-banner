@@ -18,3 +18,22 @@ val allImg = listOf(
         img = R.drawable.bg_2
     ),
 )
+
+val allImgSecond = listOf(
+    ImageModel(
+        desc = "Первое",
+        img = R.drawable.second_img_1
+    ),
+    ImageModel(
+        desc = "Второе",
+        img = R.drawable.second_img_2
+    ),
+    ImageModel(
+        desc = "Третье",
+        img = R.drawable.second_img_3
+    ),
+    ImageModel(
+        desc = "Четвортое",
+        img = R.drawable.second_img_4
+    ),
+)

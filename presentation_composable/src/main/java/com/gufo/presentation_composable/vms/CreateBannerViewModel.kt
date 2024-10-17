@@ -1,5 +1,6 @@
 package com.gufo.presentation_composable.vms
 
+import android.media.Image
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
@@ -17,12 +18,18 @@ class CreateBannerViewModel @Inject constructor(
 ): ViewModel() {
     var selectedImg by mutableStateOf<ImageModel?>(null)
         private set
+    var selectedSecondImg by mutableStateOf<ImageModel?>(null)
+        private set
+    var textToBanner by mutableStateOf("")
+        private set
 
     var selectedShape by mutableStateOf(ShapesName.NONE)
         private set
 
     val setSelectedImg = { model: ImageModel -> selectedImg = model}
+    val setSelectedSecondImage = { model: ImageModel -> selectedSecondImg = model }
     val selectShape = { shape: ShapesName -> selectedShape = shape }
+    val setTextToBanner = { value: String -> textToBanner = value }
 
 }
 

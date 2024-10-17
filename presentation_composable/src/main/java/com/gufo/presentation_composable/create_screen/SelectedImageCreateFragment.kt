@@ -48,7 +48,7 @@ fun SelectedImageCreateFragment(
 }
 
 @Composable
-private fun ImageItem(
+fun ImageItem(
     model: ImageModel,
     selected: Boolean,
     onClick: () -> Unit,
